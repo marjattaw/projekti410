@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marjatan kaverilista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Marjatan kaverilista</h1>
+
+    <!-- Versio 1: Kymmenen kaverin lisääminen -->
+    <div id="version1">
+        <h2>Lisää kymmenen kaveria</h2>
+        <button onclick="addTenFriends()">Tästä lisäykseen</button>
+        <ul id="friendList1"></ul>
+    </div>
+
+    <!-- Versio 2: Monipuolinen kaverilista -->
+    <div id="version2" style="display: none;">
+        <h2>Muokattava kaverilista</h2>
+        <input type="text" id="newFriend" placeholder="Lisää kaverin nimi">
+        <button onclick="addFriend()">Lisää kaveri</button>
+        <button onclick="sortFriends()">Järjestä nimet</button>
+        <ul id="friendList2"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
